@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="54b4c550-3f48-41c7-9e77-d9de7deb802f" ChangeDateTime="03/23/2020 11:33:41">
+    <Property Name="ElementName" Value="[Meta].[District].[ProvinceId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Meta].[District]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ParentId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="29e45ee2-3359-4542-818a-24a2885dc2af" ChangeDateTime="03/23/2020 11:33:57">
+    <Property Name="ElementName" Value="[Meta].[Province].[CountryId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Meta].[Province]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ParentId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c07ae6cb-a4f6-4e6f-911c-739d782645ec" ChangeDateTime="03/23/2020 11:34:02">
+    <Property Name="ElementName" Value="[Meta].[Ward].[DistrictId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Meta].[Ward]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ParentId" />
+  </Operation>
+</Operations>

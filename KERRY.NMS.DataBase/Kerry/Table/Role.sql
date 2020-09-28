@@ -1,0 +1,6 @@
+﻿CREATE TABLE [NMS].[Role]
+(
+	[Id] INT IDENTITY(1,1) NOT NULL PRIMARY KEY, 
+    [Label] NVARCHAR(50) NOT NULL, 
+    [Active] BIT NOT NULL DEFAULT (1)
+)

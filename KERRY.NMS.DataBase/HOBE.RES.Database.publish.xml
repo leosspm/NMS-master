@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseName>KERRY.NMS.Database</TargetDatabaseName>
+    <DeployScriptFileName>KERRY.NMS.Database.sql</DeployScriptFileName>
+    <!--<TargetConnectionString>Data Source=SVNSGND000037\SQLEXPRESS;Persist Security Info=True;User ID=sa;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False</TargetConnectionString>-->
+    <!--<TargetConnectionString>Data Source=MSI\SQLEXPRESS;Persist Security Info=True;User ID=sa;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False</TargetConnectionString>-->
+    <!--<TargetConnectionString>Data Source=DESKTOP-LK15461\\SQLEXPRESS;Initial Catalog=KERRY.NMS.Database;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False</TargetConnectionString>-->
+    <!--<TargetConnectionString>Data Source=MSI\SQLEXPRESS;Persist Security Info=True;User ID=sa;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False</TargetConnectionString>-->
+    <!--<TargetConnectionString>Data Source=DESKTOP-LK15461\SQLEXPRESS;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False</TargetConnectionString>-->
+    <TargetConnectionString>Data Source=DESKTOP-SGDKETR;Persist Security Info=True;User ID=sa;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False</TargetConnectionString>
+    <ProfileVersionNumber>1</ProfileVersionNumber>
+    <BlockOnPossibleDataLoss>True</BlockOnPossibleDataLoss>
+    <DropObjectsNotInSource>True</DropObjectsNotInSource>
+    <AllowUnsafeRowLevelSecurityDataMovement>True</AllowUnsafeRowLevelSecurityDataMovement>
+    <CreateNewDatabase>False</CreateNewDatabase>
+  </PropertyGroup>
+</Project>

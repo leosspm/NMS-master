@@ -1,0 +1,30 @@
+﻿CREATE TABLE [NMS].[UserRole]
+(
+	[Id] INT IDENTITY(1,1) NOT NULL,
+    [UserId] INT NOT NULL,
+    [RoleId] INT NOT NULL,
+    [SqlCreatedDate] DATETIME NOT NULL DEFAULT(SYSDATETIME()),
+    [SqlCreatedBy] INT NOT NULL,
+    [SqlUpdatedDate] DATETIME NOT NULL DEFAULT(SYSDATETIME()),
+    [SqlUpdatedBy] INT NOT NULL,
+    CONSTRAINT [PK_RelateUserRole] PRIMARY KEY CLUSTERED 
+    (
+        [Id] ASC
+    ) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+)
+
+GO
+
+ALTER TABLE  [NMS].[UserRole] WITH CHECK ADD CONSTRAINT [FK_RelateUserRoleSqlCreatedBy_HobeUserId] FOREIGN KEY ([SqlCreatedBy]) REFERENCES  [NMS].[User]([Id])
+
+GO
+
+ALTER TABLE  [NMS].[UserRole] WITH CHECK ADD CONSTRAINT [FK_RelateUserRoleSqlUpdatedBy_HobeUserId] FOREIGN KEY ([SqlUpdatedBy]) REFERENCES  [NMS].[User]([Id])
+
+GO
+
+ALTER TABLE  [NMS].[UserRole] WITH CHECK ADD CONSTRAINT [FK_RelateUserRoleUserId_HobeUserId] FOREIGN KEY ([UserId]) REFERENCES  [NMS].[User]([Id])
+
+GO
+
+ALTER TABLE  [NMS].[UserRole] WITH CHECK ADD CONSTRAINT [FK_RelateUserRoleRoleId_MetaRoleId] FOREIGN KEY ([RoleId]) REFERENCES [NMS].[Role]([Id])

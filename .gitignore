@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+**/.vs/*
+**/bin/*
+**/obj/*
+**/*.user
+**/*.dbmdl
+**/*.jfm
+**/.config/dotnet-tools.json
+**/*.pubxml
+HOBE.RES.DataBase/HOBE.RES.DataBase.jfm
+HOBE.RES.DataBase/HOBE.RES.DataBase.jfm
+HOBE.RES.API/appsettings.json
+HOBE.RES.API/appsettings.json
